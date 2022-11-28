@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "travel-tracker-357703",
+    "prod": "travel-tracker-357703"
+  },
+  "targets": {
+    "travel-tracker-357703": {
+      "hosting": {
+        "ui": [
+          "seeyourroute"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

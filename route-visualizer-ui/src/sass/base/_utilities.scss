@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.u-bottom-right-position {
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+}
+
+.u-bottom-right-position-2 {
+  position: fixed;
+  bottom: 7rem;
+  right: 4rem;
+
+  @include respond(phone) {
+    bottom: 12rem;
+    right: 1rem;
+  }
+}
+
+.u-bottom-left-position {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.u-top-right-position {
+  position: fixed;
+  top: 2rem;
+  right: 4rem;
+
+  @include respond(phone) {
+    top: 4rem;
+    right: 1rem;
+  }
+}
+
+.u-top-right-position-2 {
+  position: fixed;
+  top: 7rem;
+  right: 4rem;
+
+  @include respond(phone) {
+    top: 9rem;
+    right: 1rem;
+  }
+}
+
+.u-bring-to-front {
+  z-index: 10000;
+}
+
+.u-top-margin-small {
+  margin-top: 3rem;
+}
+
+.u-top-margin-medium {
+  margin-top: 5rem;
+}
+
+.u-bottom-margin-extrasmall {
+  margin-bottom: 1rem;
+}
+
+.list-item {
+  list-style: none;
+  margin-bottom: 1rem;
+}

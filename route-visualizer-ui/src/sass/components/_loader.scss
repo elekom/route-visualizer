@@ -1,0 +1,28 @@
+.loader {
+  border: 16px solid $light-gray;
+  border-top: 16px solid $dark-gray;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  animation: spin 2s linear infinite;
+
+  flex-shrink: 0;
+
+  &--text {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    color: $dark-gray;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader--wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  @include absCenter;
+}
